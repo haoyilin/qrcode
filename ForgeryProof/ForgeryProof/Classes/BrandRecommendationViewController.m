@@ -72,7 +72,7 @@
 	_searchBar.delegate = self;
 	_searchBar.barStyle=UIBarStyleDefault;
 
-    [[[_searchBar subviews] objectAtIndex:0] setImage:[UIImage imageNamed:@"close.png"]];
+    [[[_searchBar subviews] objectAtIndex:0] setImage:[UIImage imageNamed:@"touming.png"]];
     
     [self.view addSubview:_searchBar];
 }
@@ -194,9 +194,9 @@
     [_searchBar setShowsCancelButton:YES animated:YES];
 
     UIButton *btnCancel = [[searchBar subviews] objectAtIndex:2];
-    [btnCancel setBackgroundImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateNormal];
-    [btnCancel setBackgroundImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateSelected];
-    [btnCancel setBackgroundImage:[UIImage imageNamed:@"close.png"] forState:UIControlStateHighlighted];
+    [btnCancel setBackgroundImage:[UIImage imageNamed:@"touming.png"] forState:UIControlStateNormal];
+    [btnCancel setBackgroundImage:[UIImage imageNamed:@"touming.png"] forState:UIControlStateSelected];
+    [btnCancel setBackgroundImage:[UIImage imageNamed:@"touming.png"] forState:UIControlStateHighlighted];
     
     [btnCancel setTitle:@"取消" forState:UIControlStateNormal];
     

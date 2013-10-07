@@ -119,14 +119,15 @@
 		8360561F17D4FAE700ED884E /* FMTImageSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561517D4FAE700ED884E /* FMTImageSet.m */; };
 		8360562017D4FAE700ED884E /* FMTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561717D4FAE700ED884E /* FMTMainViewController.m */; };
 		8360562117D4FAE700ED884E /* FMTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8360561817D4FAE700ED884E /* FMTMainViewController.xib */; };
-		8360562217D4FAE700ED884E /* FMTZXingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561B17D4FAE700ED884E /* FMTZXingViewController.m */; };
-		8360562317D4FAE700ED884E /* FMTZXingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */; };
 		8360562517D4FB2400ED884E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360562417D4FB2300ED884E /* libiconv.dylib */; };
 		838AED0F17E5E467003B71F3 /* TakePhotoQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AED0D17E5E467003B71F3 /* TakePhotoQRCodeViewController.m */; };
 		838AED1017E5E467003B71F3 /* TakePhotoQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838AED0E17E5E467003B71F3 /* TakePhotoQRCodeViewController.xib */; };
 		838AED1417E5E47B003B71F3 /* InputQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AED1217E5E47B003B71F3 /* InputQRCodeViewController.m */; };
 		838AED1517E5E47B003B71F3 /* InputQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838AED1317E5E47B003B71F3 /* InputQRCodeViewController.xib */; };
 		838AED1917E5F781003B71F3 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AED1817E5F781003B71F3 /* Company.m */; };
+		CE4F507C1802A38900D98FE2 /* touming.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4F50791802A38900D98FE2 /* touming.png */; };
+		CE4F507D1802A38900D98FE2 /* validationFalseBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4F507A1802A38900D98FE2 /* validationFalseBg.png */; };
+		CE4F507E1802A38900D98FE2 /* validationTrueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4F507B1802A38900D98FE2 /* validationTrueBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -322,9 +323,6 @@
 		8360561617D4FAE700ED884E /* FMTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTMainViewController.h; sourceTree = "<group>"; };
 		8360561717D4FAE700ED884E /* FMTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTMainViewController.m; sourceTree = "<group>"; };
 		8360561817D4FAE700ED884E /* FMTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTMainViewController.xib; sourceTree = "<group>"; };
-		8360561A17D4FAE700ED884E /* FMTZXingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTZXingViewController.h; sourceTree = "<group>"; };
-		8360561B17D4FAE700ED884E /* FMTZXingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTZXingViewController.m; sourceTree = "<group>"; };
-		8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTZXingViewController.xib; sourceTree = "<group>"; };
 		8360562417D4FB2300ED884E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		838AED0C17E5E467003B71F3 /* TakePhotoQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoQRCodeViewController.h; sourceTree = "<group>"; };
 		838AED0D17E5E467003B71F3 /* TakePhotoQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoQRCodeViewController.m; sourceTree = "<group>"; };
@@ -334,6 +332,9 @@
 		838AED1317E5E47B003B71F3 /* InputQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputQRCodeViewController.xib; sourceTree = "<group>"; };
 		838AED1717E5F781003B71F3 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		838AED1817E5F781003B71F3 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		CE4F50791802A38900D98FE2 /* touming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touming.png; sourceTree = "<group>"; };
+		CE4F507A1802A38900D98FE2 /* validationFalseBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = validationFalseBg.png; sourceTree = "<group>"; };
+		CE4F507B1802A38900D98FE2 /* validationTrueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = validationTrueBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +533,9 @@
 				831427BB17F48A3400D37971 /* TabBar_b2.png */,
 				831427BC17F48A3400D37971 /* TabBar_b3.png */,
 				831427BD17F48A3400D37971 /* TabBar_b4.png */,
+				CE4F50791802A38900D98FE2 /* touming.png */,
+				CE4F507A1802A38900D98FE2 /* validationFalseBg.png */,
+				CE4F507B1802A38900D98FE2 /* validationTrueBg.png */,
 				834DC40817EDCCD80014C211 /* close.png */,
 				834DC40417EDC7220014C211 /* GoodResultBack.png */,
 				834DC3FE17EDC2DE0014C211 /* ComTable.png */,
@@ -794,9 +798,6 @@
 		8360561917D4FAE700ED884E /* ZXing */ = {
 			isa = PBXGroup;
 			children = (
-				8360561A17D4FAE700ED884E /* FMTZXingViewController.h */,
-				8360561B17D4FAE700ED884E /* FMTZXingViewController.m */,
-				8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */,
 			);
 			path = ZXing;
 			sourceTree = "<group>";
@@ -840,6 +841,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = com.haoyl;
+				TargetAttributes = {
+					836054C817D4D96900ED884E = {
+						DevelopmentTeam = A9JFP3S47H;
+					};
+				};
 			};
 			buildConfigurationList = 836054C417D4D96900ED884E /* Build configuration list for PBXProject "ForgeryProof" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -876,6 +882,7 @@
 				8360550D17D4DAC200ED884E /* bigLogo.png in Resources */,
 				8360550E17D4DAC200ED884E /* First_add.png in Resources */,
 				8360550F17D4DAC200ED884E /* first_b2_1.png in Resources */,
+				CE4F507C1802A38900D98FE2 /* touming.png in Resources */,
 				8360551117D4DAC200ED884E /* first_bi_1.png in Resources */,
 				8360551317D4DAC200ED884E /* First_text.png in Resources */,
 				8360551417D4DAC200ED884E /* Logo.png in Resources */,
@@ -887,11 +894,12 @@
 				836055C417D4E3BC00ED884E /* BrandConsultingViewController.xib in Resources */,
 				836055C917D4E44E00ED884E /* BrandRecommendationViewController.xib in Resources */,
 				836055CE17D4E47900ED884E /* AboutViewController.xib in Resources */,
+				CE4F507E1802A38900D98FE2 /* validationTrueBg.png in Resources */,
 				836055D017D4EED500ED884E /* Default.png in Resources */,
 				836055D217D4EEDE00ED884E /* Default@2x.png in Resources */,
 				8360561E17D4FAE700ED884E /* FMTCodeViewController.xib in Resources */,
+				CE4F507D1802A38900D98FE2 /* validationFalseBg.png in Resources */,
 				8360562117D4FAE700ED884E /* FMTMainViewController.xib in Resources */,
-				8360562317D4FAE700ED884E /* FMTZXingViewController.xib in Resources */,
 				838AED1017E5E467003B71F3 /* TakePhotoQRCodeViewController.xib in Resources */,
 				838AED1517E5E47B003B71F3 /* InputQRCodeViewController.xib in Resources */,
 				83200E9117E884AB00179855 /* ComDetailViewController.xib in Resources */,
@@ -967,7 +975,6 @@
 				8360561D17D4FAE700ED884E /* FMTCodeViewController.m in Sources */,
 				8360561F17D4FAE700ED884E /* FMTImageSet.m in Sources */,
 				8360562017D4FAE700ED884E /* FMTMainViewController.m in Sources */,
-				8360562217D4FAE700ED884E /* FMTZXingViewController.m in Sources */,
 				838AED0F17E5E467003B71F3 /* TakePhotoQRCodeViewController.m in Sources */,
 				838AED1417E5E47B003B71F3 /* InputQRCodeViewController.m in Sources */,
 				838AED1917E5F781003B71F3 /* Company.m in Sources */,
@@ -1053,9 +1060,11 @@
 		836054E717D4D96A00ED884E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+
 				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer: hao yi lin (97T6T948L7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hao yi lin (97T6T948L7)";
+
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1069,9 +1078,11 @@
 					"\"$(SRCROOT)/ForgeryProof/Classes/QRCode/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "防伪平台";
+
 				PROVISIONING_PROFILE = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
 				VALID_ARCHS = armv7;
+
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
