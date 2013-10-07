@@ -1078,7 +1078,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ForgeryProof/ForgeryProof-Prefix.pch";
 				INFOPLIST_FILE = "ForgeryProof/ForgeryProof-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ForgeryProof/Classes/QRCode/ZBarSDK\"",
@@ -1104,7 +1104,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ForgeryProof/ForgeryProof-Prefix.pch";
 				INFOPLIST_FILE = "ForgeryProof/ForgeryProof-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ForgeryProof/Classes/QRCode/ZBarSDK\"",
