@@ -13,10 +13,12 @@
     NSString *_comId;
     NSString *_introduction;
     NSString *_comName;
+    NSString *_recommendLevel;
 }
 
 @property (nonatomic, copy) NSString *comId;
 @property (nonatomic, copy) NSString *introduction;
 @property (nonatomic, copy) NSString *comName;
+@property (nonatomic, copy) NSString *recommendLevel;
 
 @end

@@ -11,12 +11,14 @@
 @implementation Company
 
 @synthesize comId = _comId, comName = _comName, introduction = _introduction;
+@synthesize recommendLevel = _recommendLevel;
 
 - (void)dealloc
 {
     [_comId release];
     [_comName release];
     [_introduction release];
+    [_recommendLevel release];
     [super dealloc];
 }
 

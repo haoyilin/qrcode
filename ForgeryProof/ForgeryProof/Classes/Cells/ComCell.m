@@ -11,6 +11,7 @@
 @implementation ComCell
 
 @synthesize btn1, btn2, btn3, btn4;
+@synthesize imageView1, imageView2, imageView3;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

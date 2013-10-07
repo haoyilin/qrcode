@@ -42,7 +42,7 @@
             
             NSString *strImgName = [[@"TabBar_b" stringByAppendingFormat:@"%d",i + 1] stringByAppendingString:@".png"];
             UIImageView *image1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:strImgName] ];
-            [image1 setFrame:CGRectMake(10, -5, 50, 50)];
+            [image1 setFrame:CGRectMake(15, -5, 50, 50)];
 
             UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 42, 80, 15)];
             [label1 setTextAlignment:NSTextAlignmentCenter];
@@ -56,10 +56,10 @@
                     strName = @"快速防伪";
                     break;
                 case 1:
-                    strName = @"品牌推荐";
+                    strName = @"品牌咨询";
                     break;
                 case 2:
-                    strName = @"品牌咨询";
+                    strName = @"品牌推荐";
                     break;
                 case 3:
                     strName = @"关于平台";

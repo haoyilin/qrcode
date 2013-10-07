@@ -84,6 +84,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)swipRight
+{
+    [self backAction];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

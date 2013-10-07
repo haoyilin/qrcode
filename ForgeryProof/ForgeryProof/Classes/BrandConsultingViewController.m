@@ -9,6 +9,8 @@
 #import "BrandConsultingViewController.h"
 #import "ComCell.h"
 
+#define ROW_NUMS 3
+
 @interface BrandConsultingViewController ()
 
 @end
@@ -57,7 +59,9 @@
         [com setComId:[dicTemp objectForKey:@"com_id"]];
         [com setIntroduction:[dicTemp objectForKey:@"introduction"]];
         [com setComName:[dicTemp objectForKey:@"name"]];
-        [_arrayDataSource addObject:com];        
+        [com setRecommendLevel:[dicTemp objectForKey:@"recommendLevel"]];
+
+        [_arrayDataSource addObject:com];
     }
     
     NSLog(@"_arrayDataSource : %@",_arrayDataSource);
@@ -73,13 +77,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([_arrayDataSource count] % 4 == 0)
+    if ([_arrayDataSource count] % ROW_NUMS == 0)
     {
-        return [_arrayDataSource count] / 4;
+        return [_arrayDataSource count] / ROW_NUMS;
     }
     else
     {
-        return [_arrayDataSource count] / 4 + 1;
+        return [_arrayDataSource count] / ROW_NUMS + 1;
     }
 }
 
@@ -98,79 +102,140 @@
     ComCell *cell = [tableView dequeueReusableCellWithIdentifier:ComCellIdentifier];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 
-    int remain = [_arrayDataSource count] % 4;
+    int remain = [_arrayDataSource count] % ROW_NUMS;
     if (remain == 0)
     {
-        Company *com1 = [_arrayDataSource objectAtIndex:row * 4];
-        Company *com2 = [_arrayDataSource objectAtIndex:row * 4 + 1];
-        Company *com3 = [_arrayDataSource objectAtIndex:row * 4 + 2];
-        Company *com4 = [_arrayDataSource objectAtIndex:row * 4 + 3];
+        Company *com1 = [_arrayDataSource objectAtIndex:row * ROW_NUMS];
+        Company *com2 = [_arrayDataSource objectAtIndex:row * ROW_NUMS + 1];
+        Company *com3 = [_arrayDataSource objectAtIndex:row * ROW_NUMS + 2];
         
         [cell.btn1 setTitle:[com1 comName] forState:UIControlStateNormal];
         [cell.btn2 setTitle:[com2 comName] forState:UIControlStateNormal];
         [cell.btn3 setTitle:[com3 comName] forState:UIControlStateNormal];
-        [cell.btn4 setTitle:[com4 comName] forState:UIControlStateNormal];
         [cell.btn1 setHidden:NO];
         [cell.btn2 setHidden:NO];
         [cell.btn3 setHidden:NO];
-        [cell.btn4 setHidden:NO];
+        
+        if (![[com1 recommendLevel]  isEqualToString:@"0"])
+        {
+            [cell.imageView1 setHidden:NO];
+        }
+        else
+        {
+            [cell.imageView1 setHidden:YES];
+        }
+        
+        if (![[com2 recommendLevel]  isEqualToString:@"0"])
+        {
+            [cell.imageView2 setHidden:NO];
+        }
+        else
+        {
+            [cell.imageView2 setHidden:YES];
+        }
+        
+        if (![[com3 recommendLevel]  isEqualToString:@"0"])
+        {
+            [cell.imageView3 setHidden:NO];
+        }
+        else
+        {
+            [cell.imageView3 setHidden:YES];
+        }
     }
     else
     {
-        if ( [_arrayDataSource count] / 4 == row)
+        if ( [_arrayDataSource count] / ROW_NUMS == row)
         {
             if (remain == 1)
             {
-                Company *com1 = [_arrayDataSource objectAtIndex:row * 4];
+                Company *com1 = [_arrayDataSource objectAtIndex:row * ROW_NUMS];
                 [cell.btn1 setTitle:[com1 comName] forState:UIControlStateNormal];
                 [cell.btn1 setHidden:NO];
                 [cell.btn2 setHidden:YES];
                 [cell.btn3 setHidden:YES];
-                [cell.btn4 setHidden:YES];
+
+                if (![[com1 recommendLevel]  isEqualToString:@"0"])
+                {
+                    [cell.imageView1 setHidden:NO];
+                }
+                else
+                {
+                    [cell.imageView1 setHidden:YES];
+                }
+                [cell.imageView2 setHidden:YES];
+                [cell.imageView3 setHidden:YES];
             }
             else if (remain == 2)
             {
-                Company *com1 = [_arrayDataSource objectAtIndex:row * 4];
-                Company *com2 = [_arrayDataSource objectAtIndex:row * 4 + 1];
+                Company *com1 = [_arrayDataSource objectAtIndex:row * ROW_NUMS];
+                Company *com2 = [_arrayDataSource objectAtIndex:row * ROW_NUMS + 1];
                 
                 [cell.btn1 setTitle:[com1 comName] forState:UIControlStateNormal];
                 [cell.btn2 setTitle:[com2 comName] forState:UIControlStateNormal];
                 [cell.btn1 setHidden:NO];
                 [cell.btn2 setHidden:NO];
                 [cell.btn3 setHidden:YES];
-                [cell.btn4 setHidden:YES];
-            }
-            else if (remain == 3)
-            {
-                Company *com1 = [_arrayDataSource objectAtIndex:row * 4];
-                Company *com2 = [_arrayDataSource objectAtIndex:row * 4 + 1];
-                Company *com3 = [_arrayDataSource objectAtIndex:row * 4 + 2];
                 
-                [cell.btn1 setTitle:[com1 comName] forState:UIControlStateNormal];
-                [cell.btn2 setTitle:[com2 comName] forState:UIControlStateNormal];
-                [cell.btn3 setTitle:[com3 comName] forState:UIControlStateNormal];
+                if (![[com1 recommendLevel]  isEqualToString:@"0"])
+                {
+                    [cell.imageView1 setHidden:NO];
+                }
+                else
+                {
+                    [cell.imageView1 setHidden:YES];
+                }
                 
-                [cell.btn1 setHidden:NO];
-                [cell.btn2 setHidden:NO];
-                [cell.btn3 setHidden:NO];
-                [cell.btn4 setHidden:YES];
+                if (![[com2 recommendLevel]  isEqualToString:@"0"])
+                {
+                    [cell.imageView2 setHidden:NO];
+                }
+                else
+                {
+                    [cell.imageView2 setHidden:YES];
+                }
+                [cell.imageView3 setHidden:YES];
             }
         }
         else
         {
-            Company *com1 = [_arrayDataSource objectAtIndex:row * 4];
-            Company *com2 = [_arrayDataSource objectAtIndex:row * 4 + 1];
-            Company *com3 = [_arrayDataSource objectAtIndex:row * 4 + 2];
-            Company *com4 = [_arrayDataSource objectAtIndex:row * 4 + 3];
+            Company *com1 = [_arrayDataSource objectAtIndex:row * ROW_NUMS];
+            Company *com2 = [_arrayDataSource objectAtIndex:row * ROW_NUMS + 1];
+            Company *com3 = [_arrayDataSource objectAtIndex:row * ROW_NUMS + 2];
             
             [cell.btn1 setTitle:[com1 comName] forState:UIControlStateNormal];
             [cell.btn2 setTitle:[com2 comName] forState:UIControlStateNormal];
             [cell.btn3 setTitle:[com3 comName] forState:UIControlStateNormal];
-            [cell.btn4 setTitle:[com4 comName] forState:UIControlStateNormal];
             [cell.btn1 setHidden:NO];
             [cell.btn2 setHidden:NO];
             [cell.btn3 setHidden:NO];
-            [cell.btn4 setHidden:NO];
+            
+            if (![[com1 recommendLevel]  isEqualToString:@"0"])
+            {
+                [cell.imageView1 setHidden:NO];
+            }
+            else
+            {
+                [cell.imageView1 setHidden:YES];
+            }
+            
+            if (![[com2 recommendLevel]  isEqualToString:@"0"])
+            {
+                [cell.imageView2 setHidden:NO];
+            }
+            else
+            {
+                [cell.imageView2 setHidden:YES];
+            }
+            
+            if (![[com3 recommendLevel]  isEqualToString:@"0"])
+            {
+                [cell.imageView3 setHidden:NO];
+            }
+            else
+            {
+                [cell.imageView3 setHidden:YES];
+            }
         }
     }
 

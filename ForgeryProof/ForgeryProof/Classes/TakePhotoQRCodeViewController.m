@@ -7,6 +7,7 @@
 //
 
 #import "TakePhotoQRCodeViewController.h"
+#import "Common.h"
 
 @interface TakePhotoQRCodeViewController ()
 
@@ -26,6 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _actView = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge] autorelease];
+    [_actView setCenter:CENTER_POINT];
+    [self.view addSubview:_actView];
     
     [self scanningImg:self];
     // Do any additional setup after loading the view from its nib.
@@ -101,8 +106,46 @@
             tempStr = [NSString stringWithCString:[tempStr cStringUsingEncoding:NSShiftJISStringEncoding] encoding:NSUTF8StringEncoding];
         }
         NSLog(@"tempStr : %@",tempStr);
+        
+        [self seachAction:tempStr];
 //        textLabel.text =  tempStr;
     }
+}
+
+- (void)seachAction:(NSString *)searchStr
+{
+    NSDictionary *dicInquire = [NSDictionary dictionaryWithObjectsAndKeys:@"inquire", @"command", searchStr, @"serialnumber", @"1", @"class", nil];
+    
+    _currentRequest = [[CustomASIHttpRequestController sharedInstance] requestNormalTag:e_inquire dicValue:dicInquire delegate:self finishSelector:@selector(didFinishCallBack:) failSelector:@selector(didFailCallback:) currentRequest:_currentRequest];
+    
+    [_actView startAnimating];
+}
+
+- (void)didFinishCallBack:(ASIHTTPRequest *)request
+{
+    [_actView stopAnimating];
+    NSDictionary *dicResult = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableLeaves error:nil];
+    NSLog(@"result : %@",dicResult);
+    
+    if ([Common exsitKey:@"result" inDic:dicResult])
+    {
+        NSDictionary *dicTemp = [[dicResult objectForKey:@"result"] objectAtIndex:0];
+        [_labelProName setText:[dicTemp objectForKey:@"pro_name"]];
+        [_labelComName setText:[dicTemp objectForKey:@"pro_name"]];
+        [_labelContent setText:[[@"说明：此产品是" stringByAppendingString:[dicTemp objectForKey:@"pro_name"]] stringByAppendingString:@"公司生产的正品，请放心使用。"]];
+        [_viewResult setHidden:NO];
+    }
+    else
+    {
+        [Common alert:@"查无此产品。"];
+    }
+    
+}
+
+- (void)didFailCallback:(ASIHTTPRequest *)request
+{
+    [_actView stopAnimating];
+    NSLog(@"didFailCallback %@",request.error);
 }
 
 - (IBAction)backAction
@@ -110,6 +153,11 @@
     [[(AppDelegate *)[[UIApplication sharedApplication] delegate] tabBarController] hidesTabBar:NO animated:NO];
 
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)swipRight
+{
+    [self backAction];
 }
 
 - (void)didReceiveMemoryWarning

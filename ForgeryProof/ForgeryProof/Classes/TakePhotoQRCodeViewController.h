@@ -9,6 +9,14 @@
 #import "CustomViewController.h"
 
 @interface TakePhotoQRCodeViewController : CustomViewController <ZBarReaderDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+{
+    UIActivityIndicatorView *_actView;
+    
+    IBOutlet UILabel *_labelProName;
+    IBOutlet UILabel *_labelComName;
+    IBOutlet UILabel *_labelContent;
+    IBOutlet UIView *_viewResult;
+}
 
 - (IBAction)backAction;
 

@@ -130,6 +130,7 @@
     if (cell == nil)
     {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        [cell.textLabel setTextColor:[UIColor whiteColor]];
 //        UIImageView *imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ComTable.png"]] autorelease];
 //        [imageView setFrame:CGRectMake(0, 0, 320, 44)];
 //        [cell setBackgroundView:imageView];

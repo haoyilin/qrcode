@@ -113,6 +113,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)swipRight
+{
+    [self backAction];
+}
+
 - (void)dealloc
 {
     [super dealloc];
