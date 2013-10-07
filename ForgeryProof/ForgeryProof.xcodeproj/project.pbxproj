@@ -832,6 +832,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = com.haoyl;
+				TargetAttributes = {
+					836054C817D4D96900ED884E = {
+						DevelopmentTeam = A9JFP3S47H;
+					};
+				};
 			};
 			buildConfigurationList = 836054C417D4D96900ED884E /* Build configuration list for PBXProject "ForgeryProof" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1043,8 +1048,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: hao yi lin (97T6T948L7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hao yi lin (97T6T948L7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1058,8 +1063,8 @@
 					"\"$(SRCROOT)/ForgeryProof/Classes/QRCode/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "防伪平台";
-				PROVISIONING_PROFILE = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BF49FF01-7AB3-49B7-B891-44996B9AEBE4";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1069,8 +1074,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: hao yi lin (97T6T948L7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hao yi lin (97T6T948L7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1084,8 +1089,8 @@
 					"\"$(SRCROOT)/ForgeryProof/Classes/QRCode/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "防伪平台";
-				PROVISIONING_PROFILE = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F88FB5BA-9227-4E4D-AC02-737265E04C4E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BF49FF01-7AB3-49B7-B891-44996B9AEBE4";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
