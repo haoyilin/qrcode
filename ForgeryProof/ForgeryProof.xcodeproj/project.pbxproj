@@ -119,8 +119,6 @@
 		8360561F17D4FAE700ED884E /* FMTImageSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561517D4FAE700ED884E /* FMTImageSet.m */; };
 		8360562017D4FAE700ED884E /* FMTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561717D4FAE700ED884E /* FMTMainViewController.m */; };
 		8360562117D4FAE700ED884E /* FMTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8360561817D4FAE700ED884E /* FMTMainViewController.xib */; };
-		8360562217D4FAE700ED884E /* FMTZXingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360561B17D4FAE700ED884E /* FMTZXingViewController.m */; };
-		8360562317D4FAE700ED884E /* FMTZXingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */; };
 		8360562517D4FB2400ED884E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360562417D4FB2300ED884E /* libiconv.dylib */; };
 		838AED0F17E5E467003B71F3 /* TakePhotoQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AED0D17E5E467003B71F3 /* TakePhotoQRCodeViewController.m */; };
 		838AED1017E5E467003B71F3 /* TakePhotoQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838AED0E17E5E467003B71F3 /* TakePhotoQRCodeViewController.xib */; };
@@ -322,9 +320,6 @@
 		8360561617D4FAE700ED884E /* FMTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTMainViewController.h; sourceTree = "<group>"; };
 		8360561717D4FAE700ED884E /* FMTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTMainViewController.m; sourceTree = "<group>"; };
 		8360561817D4FAE700ED884E /* FMTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTMainViewController.xib; sourceTree = "<group>"; };
-		8360561A17D4FAE700ED884E /* FMTZXingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTZXingViewController.h; sourceTree = "<group>"; };
-		8360561B17D4FAE700ED884E /* FMTZXingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTZXingViewController.m; sourceTree = "<group>"; };
-		8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTZXingViewController.xib; sourceTree = "<group>"; };
 		8360562417D4FB2300ED884E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		838AED0C17E5E467003B71F3 /* TakePhotoQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoQRCodeViewController.h; sourceTree = "<group>"; };
 		838AED0D17E5E467003B71F3 /* TakePhotoQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoQRCodeViewController.m; sourceTree = "<group>"; };
@@ -794,9 +789,6 @@
 		8360561917D4FAE700ED884E /* ZXing */ = {
 			isa = PBXGroup;
 			children = (
-				8360561A17D4FAE700ED884E /* FMTZXingViewController.h */,
-				8360561B17D4FAE700ED884E /* FMTZXingViewController.m */,
-				8360561C17D4FAE700ED884E /* FMTZXingViewController.xib */,
 			);
 			path = ZXing;
 			sourceTree = "<group>";
@@ -895,7 +887,6 @@
 				8360560F17D4FA3300ED884E /* zbar-samples.png in Resources */,
 				8360561E17D4FAE700ED884E /* FMTCodeViewController.xib in Resources */,
 				8360562117D4FAE700ED884E /* FMTMainViewController.xib in Resources */,
-				8360562317D4FAE700ED884E /* FMTZXingViewController.xib in Resources */,
 				838AED1017E5E467003B71F3 /* TakePhotoQRCodeViewController.xib in Resources */,
 				838AED1517E5E47B003B71F3 /* InputQRCodeViewController.xib in Resources */,
 				83200E9117E884AB00179855 /* ComDetailViewController.xib in Resources */,
@@ -967,7 +958,6 @@
 				8360561D17D4FAE700ED884E /* FMTCodeViewController.m in Sources */,
 				8360561F17D4FAE700ED884E /* FMTImageSet.m in Sources */,
 				8360562017D4FAE700ED884E /* FMTMainViewController.m in Sources */,
-				8360562217D4FAE700ED884E /* FMTZXingViewController.m in Sources */,
 				838AED0F17E5E467003B71F3 /* TakePhotoQRCodeViewController.m in Sources */,
 				838AED1417E5E47B003B71F3 /* InputQRCodeViewController.m in Sources */,
 				838AED1917E5F781003B71F3 /* Company.m in Sources */,
