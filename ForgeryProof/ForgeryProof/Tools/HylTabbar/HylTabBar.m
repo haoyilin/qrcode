@@ -38,7 +38,7 @@
 			btn = [UIButton buttonWithType:UIButtonTypeCustom];           //自定义
 			btn.showsTouchWhenHighlighted = YES;                          //
 			btn.tag = i;
-			btn.frame = CGRectMake(width * i, 0, 50, 50);
+			btn.frame = CGRectMake(width * i, 0, width, frame.size.height);
             
             NSString *strImgName = [[@"TabBar_b" stringByAppendingFormat:@"%d",i + 1] stringByAppendingString:@".png"];
             UIImageView *image1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:strImgName] ];

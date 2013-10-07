@@ -55,10 +55,6 @@
 		8360551117D4DAC200ED884E /* first_bi_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054F817D4DAC200ED884E /* first_bi_1.png */; };
 		8360551317D4DAC200ED884E /* First_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FA17D4DAC200ED884E /* First_text.png */; };
 		8360551417D4DAC200ED884E /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FB17D4DAC200ED884E /* Logo.png */; };
-		8360551517D4DAC200ED884E /* TabBar_b1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FC17D4DAC200ED884E /* TabBar_b1@2x.png */; };
-		8360551617D4DAC200ED884E /* TabBar_b3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FD17D4DAC200ED884E /* TabBar_b3@2x.png */; };
-		8360551717D4DAC200ED884E /* TabBar_b2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FE17D4DAC200ED884E /* TabBar_b2@2x.png */; };
-		8360551817D4DAC200ED884E /* TabBar_b4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 836054FF17D4DAC200ED884E /* TabBar_b4@2x.png */; };
 		8360551917D4DAC200ED884E /* TabBarButtonAdd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360550017D4DAC200ED884E /* TabBarButtonAdd.png */; };
 		8360551A17D4DAC200ED884E /* topBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360550117D4DAC200ED884E /* topBar.png */; };
 		8360555917D4DBFA00ED884E /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360551F17D4DBFA00ED884E /* ASIAuthenticationDialog.m */; };
@@ -193,10 +189,6 @@
 		836054F817D4DAC200ED884E /* first_bi_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first_bi_1.png; sourceTree = "<group>"; };
 		836054FA17D4DAC200ED884E /* First_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = First_text.png; sourceTree = "<group>"; };
 		836054FB17D4DAC200ED884E /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
-		836054FC17D4DAC200ED884E /* TabBar_b1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_b1@2x.png"; sourceTree = "<group>"; };
-		836054FD17D4DAC200ED884E /* TabBar_b3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_b3@2x.png"; sourceTree = "<group>"; };
-		836054FE17D4DAC200ED884E /* TabBar_b2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_b2@2x.png"; sourceTree = "<group>"; };
-		836054FF17D4DAC200ED884E /* TabBar_b4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_b4@2x.png"; sourceTree = "<group>"; };
 		8360550017D4DAC200ED884E /* TabBarButtonAdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarButtonAdd.png; sourceTree = "<group>"; };
 		8360550117D4DAC200ED884E /* topBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBar.png; sourceTree = "<group>"; };
 		8360551E17D4DBFA00ED884E /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -500,10 +492,6 @@
 				836054F817D4DAC200ED884E /* first_bi_1.png */,
 				836054FA17D4DAC200ED884E /* First_text.png */,
 				836054FB17D4DAC200ED884E /* Logo.png */,
-				836054FC17D4DAC200ED884E /* TabBar_b1@2x.png */,
-				836054FD17D4DAC200ED884E /* TabBar_b3@2x.png */,
-				836054FE17D4DAC200ED884E /* TabBar_b2@2x.png */,
-				836054FF17D4DAC200ED884E /* TabBar_b4@2x.png */,
 				8360550017D4DAC200ED884E /* TabBarButtonAdd.png */,
 				8360550117D4DAC200ED884E /* topBar.png */,
 			);
@@ -891,10 +879,6 @@
 				8360551117D4DAC200ED884E /* first_bi_1.png in Resources */,
 				8360551317D4DAC200ED884E /* First_text.png in Resources */,
 				8360551417D4DAC200ED884E /* Logo.png in Resources */,
-				8360551517D4DAC200ED884E /* TabBar_b1@2x.png in Resources */,
-				8360551617D4DAC200ED884E /* TabBar_b3@2x.png in Resources */,
-				8360551717D4DAC200ED884E /* TabBar_b2@2x.png in Resources */,
-				8360551817D4DAC200ED884E /* TabBar_b4@2x.png in Resources */,
 				8360551917D4DAC200ED884E /* TabBarButtonAdd.png in Resources */,
 				8360551A17D4DAC200ED884E /* topBar.png in Resources */,
 				8360556517D4DBFA00ED884E /* 37x-Checkmark.png in Resources */,
